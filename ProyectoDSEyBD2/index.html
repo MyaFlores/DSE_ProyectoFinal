@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Inventarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion de Inventarios</h1>
+        
+        <section>
+            <h2>Agregar nuevo registro</h2>
+            <form id="registerForm">
+                <label for="product">Producto:</label>
+                <input type="text" id="product" name="product" required>
+                <label for="stock">Stock:</label>
+                <input type="number" id="stock" name="stock" required>
+                <button type="submit">Agregar Registro</button>
+            </form>
+        </section>
+
+        <div class="tables-container">
+            <section class="table-section">
+                <h2>Registros</h2>
+                <table id="registersTable">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Stock</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Registers will be dynamically added here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="table-section">
+                <h2>Comentarios</h2>
+                <table id="commentsTable">
+                    <thead>
+                        <tr>
+                            <th>Comentarios</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Comments will be dynamically added here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <section>
+            <h2>Agregar comentario</h2>
+            <form id="commentForm">
+                <label for="comment">Comentario:</label>
+                <input type="text" id="comment" name="comment" required>
+                <button type="submit">Agregar Comentario</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
