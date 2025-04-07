@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema POS - Finanzas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button id="backButton">←</button>
+    <h1>Finanzas</h1>
+  </header>
+
+  <div class="grid-container">
+    <!-- Cuadro 1: Resumen Financiero con gráfico de barras horizontal -->
+    <div class="grid-item">
+      <h2>Resumen Financiero</h2>
+      <div class="metrics-box">
+        <div class="metric-item">
+          <span>Ingresos totales:</span>
+          <span>$12,500</span>
+        </div>
+        <div class="metric-item">
+          <span>Gastos totales:</span>
+          <span>$7,800</span>
+        </div>
+        <div class="metric-item">
+          <span>Beneficio neto:</span>
+          <span>$4,700</span>
+        </div>
+      </div>
+      <div class="chart horizontal-bar">
+        <!-- Barras horizontales: ancho relativo para simular valores -->
+        <div class="bar ingresos" style="width: 80%;">Ingresos</div>
+        <div class="bar gastos" style="width: 50%;">Gastos</div>
+      </div>
+    </div>
+
+    <!-- Cuadro 2: Evolución (chart de línea) -->
+    <div class="grid-item">
+      <h2>Evolución</h2>
+      <div class="chart line-chart">
+        <!-- Chart de línea simulado con SVG -->
+        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+          <polyline fill="none" stroke="#3498db" stroke-width="2"
+            points="0,40 20,30 40,35 60,20 80,25 100,10" />
+          <!-- Puntos -->
+          <circle cx="0" cy="40" r="1.5" fill="#3498db" />
+          <circle cx="20" cy="30" r="1.5" fill="#3498db" />
+          <circle cx="40" cy="35" r="1.5" fill="#3498db" />
+          <circle cx="60" cy="20" r="1.5" fill="#3498db" />
+          <circle cx="80" cy="25" r="1.5" fill="#3498db" />
+          <circle cx="100" cy="10" r="1.5" fill="#3498db" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Cuadro 3: Pie Chart de Gastos Mensuales -->
+    <div class="grid-item">
+      <h2>Gastos Mensuales</h2>
+      <div class="chart pie-chart">
+        <!-- Pie chart simulado con SVG -->
+        <svg viewBox="0 0 32 32">
+          <circle r="16" cx="16" cy="16" fill="#f5f6fa"/>
+          <path d="M16 16 L16 0 A16 16 0 0 1 31 9 z" fill="#e74c3c"/>
+          <path d="M16 16 L31 9 A16 16 0 0 1 10 31 z" fill="#f1c40f"/>
+          <path d="M16 16 L10 31 A16 16 0 0 1 16 0 z" fill="#2ecc71"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Cuadro 4: Barras verticales de Ingresos Mensuales -->
+    <div class="grid-item">
+      <h2>Ingresos Mensuales</h2>
+      <div class="chart vertical-bars">
+        <!-- Simulación de barras verticales -->
+        <div class="vbar" style="height: 60%;">Ene</div>
+        <div class="vbar" style="height: 70%;">Feb</div>
+        <div class="vbar" style="height: 50%;">Mar</div>
+        <div class="vbar" style="height: 80%;">Abr</div>
+        <div class="vbar" style="height: 65%;">May</div>
+        <div class="vbar" style="height: 75%;">Jun</div>
+      </div>
+    </div>
+
+    <!-- Cuadro 5: Resumen Anual (XY Chart) -->
+    <div class="grid-item">
+      <h2>Resumen Anual</h2>
+      <div class="chart xy-chart">
+        <!-- Gráfico XY simulado con puntos -->
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+          <!-- Ejes -->
+          <line x1="10" y1="90" x2="90" y2="90" stroke="#333" stroke-width="1" />
+          <line x1="10" y1="90" x2="10" y2="10" stroke="#333" stroke-width="1" />
+          <!-- Puntos aleatorios -->
+          <circle cx="20" cy="70" r="2" fill="#9b59b6" />
+          <circle cx="35" cy="55" r="2" fill="#9b59b6" />
+          <circle cx="50" cy="60" r="2" fill="#9b59b6" />
+          <circle cx="65" cy="40" r="2" fill="#9b59b6" />
+          <circle cx="80" cy="30" r="2" fill="#9b59b6" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="grid-item" id="categorias-chart">
+        <h2>Ventas por Categoría</h2>
+        <div class="chart horizontal-bar">
+          <div class="bar" style="width: 75%">Electrónicos</div>
+          <div class="bar" style="width: 60%">Alimentos</div>
+          <div class="bar" style="width: 45%">Bebidas</div>
+        </div>
+      </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
