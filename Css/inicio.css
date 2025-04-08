@@ -1,61 +1,129 @@
-body {
-    background-color: #ffff;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-header{
-    background-color:#009cb7;
-    color: #000000;
-    padding: 1rem;
-    text-align: center;
-    position: relative;
-}
-
-header h2{
-    font-size: 2.5em;
-    font-weight: bold;
-    display: inline;
-    position: relative;
-}
-
-.container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    text-align: center;
-    }
-            
-h1 {
-color: #333;
-font-size: 24px;
-margin-bottom: 20px;
-}
-
-ul {
-list-style-type: none;
-padding: 0;         
-}
-
-li {
-background-color: #009cb7;
-color: rgb(255, 255, 255);
-margin: 10px 0;
-padding: 15px;
-border-radius: 35px;
-font-size: 18px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-li:hover {
-background-color: #17bdda;
-cursor: pointer;
-}
-          
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #000000;
+        }
+        
+        /* Barra de navegación */
+        nav {
+            background-color: #064673;
+            color: rgb(255, 255, 255);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #ffffff;
+        }
+        
+        /* Sección de información */
+        .info-section {
+            background-color: #5abcff;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .info-section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            background-color: #8ed1ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .feature svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+        
+        .feature h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        /* Menú principal */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            list-style: none;
+        }
+        
+        li {
+            background-color: #8ed1ff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        li:hover {
+            transform: translateY(-5px);
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+        
+        a:hover {
+            color: #4e585f;
+        }
+        
+        svg {
+            margin-bottom: 0.5rem;
+        }
+        
         

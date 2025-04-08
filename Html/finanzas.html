@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas | Abarrotes Don Pedro</title>
+    <link rel="stylesheet" href="/Css/finanzas.css">
+    <script defer src="/Js/finanzas.js"></script>
+
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav>
+        <div class="logo">Abarrotes <span>Don Pedro</span></div>
+        <button id="salida-btn" onclick="cerrarPagina()">Cerrar Sesión</button>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="main-container">
+        <!-- Menú de accesos rápidos -->
+        <div class="quick-access">
+            <h2>Accesos Rápidos</h2>
+            <ul>
+                <li>
+                    <a href="/Html/cajero.html">
+                        <center>
+                            <svg xmlns="http://www.w3.org/2000/svg" color="black" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-cash-register">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M21 15h-2.5c-.398 0 -.779 .158 -1.061 .439c-.281 .281 -.439 .663 -.439 1.061c0 .398 .158 .779 .439 1.061c.281 .281 .663 .439 1.061 .439h1c.398 0 .779 .158 1.061 .439c.281 .281 .439 .663 .439 1.061c0 .398 -.158 .779 -.439 1.061c-.281 .281 -.663 .439 -1.061 .439h-2.5" />
+                                <path d="M19 21v1m0 -8v1" />
+                                <path d="M13 21h-7c-.53 0 -1.039 -.211 -1.414 -.586c-.375 -.375 -.586 -.884 -.586 -1.414v-10c0 -.53 .211 -1.039 .586 -1.414c.375 -.375 .884 -.586 1.414 -.586h2m12 3.12v-1.12c0 -.53 -.211 -1.039 -.586 -1.414c-.375 -.375 -.884 -.586 -1.414 -.586h-2" />
+                                <path d="M16 10v-6c0 -.53 -.211 -1.039 -.586 -1.414c-.375 -.375 -.884 -.586 -1.414 -.586h-4c-.53 0 -1.039 .211 -1.414 .586c-.375 .375 -.586 .884 -.586 1.414v6m8 0h-8m8 0h1m-9 0h-1" />
+                                <path d="M8 14v.01" />
+                                <path d="M8 17v.01" />
+                                <path d="M12 13.99v.01" />
+                                <path d="M12 17v.01" />
+                            </svg>
+                        </center>
+                        Cajero
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Html/atencion.html">
+                        <center>
+                            <svg xmlns="http://www.w3.org/2000/svg" color="black" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-cog">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h2.5" />
+                                <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M19.001 15.5v1.5" />
+                                <path d="M19.001 21v1.5" />
+                                <path d="M22.032 17.25l-1.299 .75" />
+                                <path d="M17.27 20l-1.3 .75" />
+                                <path d="M15.97 17.25l1.3 .75" />
+                                <path d="M20.733 20l1.3 .75" />
+                            </svg>
+                        </center>
+                        Atención al cliente
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Html/finanzas.html">
+                        <center>
+                            <svg xmlns="http://www.w3.org/2000/svg" color="black" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-dollar">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M13 21h-7a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3" />
+                                <path d="M16 3v4" />
+                                <path d="M8 3v4" />
+                                <path d="M4 11h12.5" />
+                                <path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+                                <path d="M19 21v1m0 -8v1" />
+                            </svg>
+                        </center>
+                        Finanzas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Html/almacenista.html">
+                        <center>
+                            <svg xmlns="http://www.w3.org/2000/svg" color="black" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-building-warehouse">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M3 21v-13l9 -4l9 4v13" />
+                                <path d="M13 13h4v8h-10v-6h6" />
+                                <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
+                            </svg>
+                        </center>
+                        Almacenista
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Html/cofig.html">
+                        <center>
+                            <svg xmlns="http://www.w3.org/2000/svg" color="black" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings-check">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11.445 20.913a1.665 1.665 0 0 1 -1.12 -1.23a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.31 .318 1.643 1.79 .997 2.694" />
+                                <path d="M15 19l2 2l4 -4" />
+                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                            </svg>
+                        </center>
+                        Configuración
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Html/proveedor.html">
+                        <center>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" /
+                                ><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                            </svg>
+                                
+                            </svg>
+                        </center>
+                        Proveedor
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contenido de finanzas -->
+        <div class="content">
+            <h1>Finanzas</h1>
+            
+            <!-- Filtros -->
+            <div class="filters">
+                <select id="periodo">
+                    <option value="mes">Este mes</option>
+                    <option value="trimestre">Este trimestre</option>
+                    <option value="anio">Este año</option>
+                    <option value="personalizado">Personalizado</option>
+                </select>
+                
+                <input type="date" id="fechaInicio" style="display: none;">
+                <input type="date" id="fechaFin" style="display: none;">
+                
+                <button onclick="aplicarFiltros()">Aplicar</button>
+            </div>
+            
+            <div class="grid-container">
+                <!-- Cuadro 1: Resumen Financiero con gráfico de barras horizontal -->
+                <div class="grid-item">
+                    <h2>Resumen Financiero</h2>
+                    <div class="metrics-box">
+                        <div class="metric-item">
+                            <span>Ingresos totales:</span>
+                            <span id="ingresos-totales">$12,500</span>
+                        </div>
+                        <div class="metric-item">
+                            <span>Gastos totales:</span>
+                            <span id="gastos-totales">$7,800</span>
+                        </div>
+                        <div class="metric-item">
+                            <span>Beneficio neto:</span>
+                            <span id="beneficio-neto">$4,700</span>
+                        </div>
+                    </div>
+                    <div class="chart horizontal-bar">
+                        <div class="bar ingresos" id="barra-ingresos">Ingresos</div>
+                        <div class="bar gastos" id="barra-gastos">Gastos</div>
+                    </div>
+                </div>
+
+                <!-- Cuadro 2: Evolución (chart de línea) -->
+                <div class="grid-item">
+                    <h2>Evolución de Ventas</h2>
+                    <div class="chart line-chart">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none" id="lineChart">
+                            <polyline fill="none" stroke="#3498db" stroke-width="2" id="lineChartPath" />
+                            <!-- Puntos se agregarán dinámicamente -->
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Cuadro 3: Pie Chart de Gastos Mensuales -->
+                <div class="grid-item">
+                    <h2>Distribución de Gastos</h2>
+                    <div class="chart pie-chart">
+                        <svg viewBox="0 0 32 32" id="pieChart">
+                            <!-- El gráfico de pastel se generará dinámicamente -->
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Cuadro 4: Barras verticales de Ingresos Mensuales -->
+                <div class="grid-item">
+                    <h2>Ingresos Mensuales</h2>
+                    <div class="chart vertical-bars" id="verticalBars">
+                        <!-- Barras se generarán dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- Cuadro 5: Resumen Anual (XY Chart) -->
+                <div class="grid-item">
+                    <h2>Rentabilidad</h2>
+                    <div class="chart xy-chart">
+                        <svg viewBox="0 0 100 100" preserveAspectRatio="none" id="xyChart">
+                            <!-- Ejes -->
+                            <line x1="10" y1="90" x2="90" y2="90" stroke="#333" stroke-width="1" />
+                            <line x1="10" y1="90" x2="10" y2="10" stroke="#333" stroke-width="1" />
+                            <!-- Puntos se agregarán dinámicamente -->
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Cuadro 6: Ventas por Categoría -->
+                <div class="grid-item" id="categorias-chart">
+                    <h2>Ventas por Categoría</h2>
+                    <div class="chart horizontal-bar" id="categoriasBars">
+                        <!-- Barras se generarán dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

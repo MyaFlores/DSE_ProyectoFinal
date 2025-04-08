@@ -1,0 +1,347 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #064673;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: calc(100vh - 60px);
+}
+
+/* Menú de accesos rápidos */
+.quick-access {
+    background-color: #56b1ed;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.quick-access h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.quick-access ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.quick-access li {
+    background-color: #8ed1ff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.quick-access li:hover {
+    transform: translateY(-5px);
+}
+
+.quick-access a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.quick-access a:hover {
+    color: #000000;
+}
+
+.quick-access svg {
+    margin-bottom: 0.5rem;
+}
+
+/* Contenido de caja */
+.content {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Encabezado de venta */
+.sale-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.sale-info {
+    font-weight: bold;
+}
+
+.sale-info span {
+    color: #1720cc;
+}
+
+/* Área de entrada manual */
+.manual-entry {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.entry-form {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.form-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #1a252f;
+}
+
+.clear-btn {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.clear-btn:hover {
+    background-color: #7f8c8d;
+}
+
+/* Venta actual */
+.current-sale {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.sale-items {
+    margin-bottom: 1.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.sale-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.item-name {
+    flex: 2;
+}
+
+.item-price {
+    flex: 1;
+    text-align: right;
+}
+
+.item-actions {
+    flex: 0.5;
+    text-align: right;
+}
+
+.remove-item {
+    color: #1720cc;
+    cursor: pointer;
+}
+
+.sale-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.sale-total span {
+    color: #1720cc;
+}
+
+.sale-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.sale-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #7f8c8d;
+}
+
+.checkout-btn {
+    background-color: #448fc4;
+    color: white;
+}
+
+.checkout-btn:hover {
+    background-color: #205274;
+}
+
+/* Área de pago */
+.payment-area {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.payment-method {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.payment-method:hover {
+    border-color: #2c3e50;
+}
+
+.payment-method.selected {
+    border-color: #27ae60;
+    background-color: #e8f5e9;
+}
+
+.payment-method p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Botón de salida */
+#salida-btn {
+    background-color: #042b46;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#salida-btn:hover {
+    background-color: #0f619b;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .manual-entry {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .sale-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
